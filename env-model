@@ -1,7 +1,24 @@
+# orders variables
 MONGODB_URI=mongodb://root:password123@mongodb-primary:27017/
 
 PORT=3000
 
 RABBIT_MQ_URI=amqp://rabbitmq:5672
 RABBIT_MQ_BILLING_QUEUE=billing
+RABBIT_MQ_AUTH_QUEUE=auth
+
+# billing variables
+RABBIT_MQ_URI=amqp://rabbitmq:5672
+RABBIT_MQ_BILLING_QUEUE=billing
+RABBIT_MQ_AUTH_QUEUE=auth
+
+# auth variables
+PORT=3001
+
+JWT_EXPIRATION=3600
+JWT_SECRET=your-secret-here-:)
+
+MONGODB_URI=mongodb://root:password123@mongodb-primary:27017/
+
+RABBIT_MQ_URI=amqp://rabbitmq:5672
 RABBIT_MQ_AUTH_QUEUE=auth
