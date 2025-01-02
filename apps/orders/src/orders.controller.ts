@@ -13,6 +13,7 @@ export class OrdersController {
     return this.ordersService.createOrder(request, req.cookies?.Authentication);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Get()
   async getOrders() {
     return this.ordersService.getOrders();
